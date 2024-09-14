@@ -82,3 +82,4 @@ git branch -M main
 git push -u origin main
 ```
 
+# Pos_React_Pokemon_app
