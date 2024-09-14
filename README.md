@@ -9,7 +9,7 @@ Este projeto foi desenvolvido com React e utiliza a API [PokeAPI](https://pokeap
 - **Comparação de Pokémons:** Mostra uma comparação entre dois Pokémons selecionados.
 
 
-![Logo do Projeto](./assets/logo.png)
+![Logo do Projeto](.src/assets/logo.png)
 
 
 ## Tecnologias Utilizadas
