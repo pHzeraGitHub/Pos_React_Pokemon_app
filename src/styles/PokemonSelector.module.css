@@ -1,0 +1,53 @@
+/* src/styles/PokemonSelector.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5; /* Fundo claro */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Cor do texto escura */
+}
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os seletores */
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}

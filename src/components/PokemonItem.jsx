@@ -12,7 +12,7 @@ const PokemonItem = ({ pokemon }) => {
           alt={pokemon.name}
           className={styles.image}
         />
-        <p>{pokemon.name}</p>
+        <p className={styles.name}>{pokemon.name}</p>
       </Link>
     </li>
   );

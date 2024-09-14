@@ -1,4 +1,3 @@
-// src/context/PokemonContext.jsx
 import React, { createContext, useState, useEffect } from 'react';
 
 export const PokemonContext = createContext();
@@ -6,6 +5,7 @@ export const PokemonContext = createContext();
 export const PokemonProvider = ({ children }) => {
   const [pokemons, setPokemons] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedPokemons, setSelectedPokemons] = useState([]);
 
   useEffect(() => {
     const fetchPokemons = async () => {
@@ -30,7 +30,7 @@ export const PokemonProvider = ({ children }) => {
   }, []);
 
   return (
-    <PokemonContext.Provider value={{ pokemons, loading }}>
+    <PokemonContext.Provider value={{ pokemons, loading, selectedPokemons, setSelectedPokemons }}>
       {children}
     </PokemonContext.Provider>
   );

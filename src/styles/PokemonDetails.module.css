@@ -1,0 +1,128 @@
+/* src/styles/PokemonDetails.module.css */
+body {
+    background-color: #121212; /* Fundo da página escuro */
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fonte padrão para o corpo */
+    color: #e0e0e0; /* Cor do texto para contraste com o fundo escuro */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fundo claro para o container de detalhes */
+    color: #e0e0e0; /* Cor do texto no fundo claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Cor de fundo do botão */
+    color: #e0e0e0; /* Cor do texto do botão */
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #444; /* Cor do fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .backButton svg {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 2.5rem; /* Tamanho da fonte para o nome do Pokémon */
+    font-weight: 700; /* Fonte em negrito */
+    color: #f0f0f0; /* Cor do texto */
+    font-family: 'Montserrat', sans-serif; /* Fonte sofisticada para o nome */
+  }
+  
+  .info {
+    width: 100%;
+  }
+  
+  .section {
+    margin-bottom: 20px; /* Espaçamento entre seções */
+  }
+  
+  .section h3 {
+    font-size: 1.5rem; /* Tamanho da fonte dos cabeçalhos */
+    color: #ccc; /* Cor do texto dos cabeçalhos */
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif; /* Fonte sofisticada para cabeçalhos */
+  }
+  
+  .section p {
+    font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+    color: #e0e0e0; /* Cor do texto dos parágrafos */
+  }
+  
+  .section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section li {
+    font-size: 1rem; /* Tamanho da fonte dos itens da lista */
+    color: #d0d0d0; /* Cor do texto dos itens */
+    margin-bottom: 5px;
+  }
+  
+  .loading, .error {
+    color: #e0e0e0; /* Cor do texto em branco para loading e error */
+    font-size: 1.2rem; /* Tamanho da fonte ajustado */
+    text-align: center;
+  }
+  
+  .normal, .fire, .water, .grass, .electric, .ice, .fighting, .poison, .ground, .flying, .psychic, .bug, .rock, .ghost, .dragon, .dark, .steel, .fairy {
+    padding: 6px 10px; /* Padding ajustado */
+    border-radius: 6px; /* Bordas arredondadas ajustadas */
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  
+  .fire { background-color: #f57c00; color: #fff; }
+  .water { background-color: #1e88e5; color: #fff; }
+  .grass { background-color: #2e7d32; color: #fff; }
+  .electric { background-color: #fdd835; color: #000; }
+  .ice { background-color: #00acc1; color: #fff; }
+  .fighting { background-color: #d32f2f; color: #fff; }
+  .poison { background-color: #8e24aa; color: #fff; }
+  .ground { background-color: #6d4c41; color: #fff; }
+  .flying { background-color: #0288d1; color: #fff; }
+  .psychic { background-color: #d81b60; color: #fff; }
+  .bug { background-color: #cddc39; color: #000; }
+  .rock { background-color: #7b5fa6; color: #fff; }
+  .ghost { background-color: #7c4dff; color: #fff; }
+  .dragon { background-color: #1976d2; color: #fff; }
+  .dark { background-color: #424242; color: #fff; }
+  .steel { background-color: #9e9e9e; color: #000; }
+  .fairy { background-color: #f48fb1; color: #000; }
+  

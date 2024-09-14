@@ -1,0 +1,12 @@
+/* src/styles/global.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #121212; /* Cor de fundo escura */
+  }
+  
+  div {
+    box-sizing: border-box;
+  }
+  

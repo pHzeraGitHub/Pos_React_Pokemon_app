@@ -1,14 +1,60 @@
 /* src/styles/PokemonList.module.css */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #000; /* Fundo preto */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px; /* Ajuste o tamanho do logotipo conforme necessário */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Espaço entre os itens do menu */
+}
+
+.nav ul li {
+  margin: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #007bff; /* Cor do link */
+  font-size: 16px; /* Tamanho da fonte dos links */
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Divida em colunas responsivas */
+  gap: 15px; /* Espaço entre os itens */
+  width: 100%;
+  max-width: 1200px; /* Ajuste o máximo largura da lista conforme necessário */
+}
